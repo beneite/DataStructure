@@ -13,7 +13,6 @@ public class Problem389 {
         for(int i=0;i<t.length();i++){
             arrayList.add(t.charAt(i));
         }
-        System.out.println(arrayList);
 
         for(int i=0;i<s.length();i++){
             arrayList.remove((Character) s.charAt(i));
