@@ -1,4 +1,8 @@
 package dataStructurePractise.array.largestSmallestElement;
+/**
+ * If you do not provide a comparator, Java's PriorityQueue will follow the natural ordering of the elements,
+ * which for integers is ascending order (i.e., it behaves as a min-heap).
+ */
 
 import java.util.Collections;
 import java.util.PriorityQueue;
