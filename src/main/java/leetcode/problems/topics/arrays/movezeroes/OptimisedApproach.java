@@ -1,7 +1,7 @@
 /** Problem no: 283
  * https://leetcode.com/problems/move-zeroes/description/
  */
-package leetcode.problems.movezeroes;
+package leetcode.problems.topics.arrays.movezeroes;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

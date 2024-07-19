@@ -1,7 +1,7 @@
 /** no: 121
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
  */
-package leetcode.problems.bestTimeToBuyAndSellStockOne;
+package leetcode.problems.topics.arrays.bestTimeToBuyAndSellStockOne;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

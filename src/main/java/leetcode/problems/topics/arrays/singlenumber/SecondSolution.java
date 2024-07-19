@@ -1,15 +1,15 @@
 /** Problem no: 136
  * https://leetcode.com/problems/single-number/description/
  */
-package leetcode.problems.singlenumber;
+package leetcode.problems.topics.arrays.singlenumber;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.Arrays;
-import java.util.HashSet;
+import java.util.HashMap;
+import java.util.Map;
 
-public class BruteForceSolution {
+public class SecondSolution {
 
     @DataProvider(name = "arrayData")
     public Object[][] provideTestData(){
@@ -17,17 +17,21 @@ public class BruteForceSolution {
     }
 
     public static int singleNumber(int[] nums) {
-        int count = 0;
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
         for(int i=0;i<nums.length;i++){
-            count =0;
-            for(int j=0;j<nums.length;j++){
-                if(nums[i]==nums[j]){
-                    count++;
-                }
+            if(hashMap.containsKey(nums[i])){
+                int value = hashMap.get(nums[i])+1;
+                hashMap.put(nums[i],value);
+            }else {
+                hashMap.put(nums[i],1);
             }
-            if(count!=2)
-                return nums[i];
         }
+
+        for(Map.Entry<Integer, Integer> entry : hashMap.entrySet()){
+            if(entry.getValue()==1)
+                return entry.getKey();
+        }
+
         return -1;
     }
 
