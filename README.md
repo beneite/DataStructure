@@ -3,9 +3,9 @@
 > [!TIP]
 > The below table contains the Algorithm
 
-| **Topic** |                                               **Sub Topics**                                               |
-|:---------:|:----------------------------------------------------------------------------------------------------------:|
-|  Sorting  | [Bubble Sort](src/main/java/Algorithms/sorting/bubble_sort/bubblesort_Notes.md) </br> Insertion Sort </br> |
+| **Topic** |                                                                                   **Sub Topics**                                                                                    |
+|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|  Sorting  | [Bubble Sort](src/main/java/Algorithms/sorting/bubble_sort/bubblesort_Notes.md) </br> [Insertion Sort](src/main/java/Algorithms/sorting/insertion_sort/insertionSortNotes.md) </br> |
 
 > [!TIP]
 > The below table contains the mapping of questions with concepts.
