@@ -1,27 +1,23 @@
 package Algorithms.sorting.pegionHole_sort;
 
+import org.testng.util.Strings;
+
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class PegionHoleSorting {
 
 
     public static void main(String[] args){
+        int[] arr = {1,12,34,12,56,16,11,111,101};
 
-        int[] arr = {1,7,9,5,3,8,0};
-
-        for(int i = 0; i < arr.length ; i++ ){
-            for(int j = 0; j < arr.length-1-i ; j++){
-                if(arr[j] < arr[j+1]){
-                    int temp = arr[j+1];
-                    arr[j+1] = arr[j];
-                    arr[j] = temp;
-                }
-            }
-        }
-
-        Arrays.stream(arr).forEach(e-> System.out.println(e));
-
+        List<Integer> lst = Arrays.stream(arr)
+                .mapToObj(e -> String.valueOf(e))
+                .filter(s -> s.startsWith("1"))
+                .map(o -> Integer.parseInt(o))
+                .collect(Collectors.toList());
+        System.out.println(lst);
     }
 }
